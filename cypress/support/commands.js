@@ -1,6 +1,8 @@
 Cypress.Commands.add('logHeaders', (testName) => {
-    const githubRunId = Cypress.env('GITHUB_RUN_ID');
-    // const githubToken = "Hello";
+    
+  console.log('All environment variables:', Cypress.env());
+  const githubRunId = Cypress.env('GITHUB_RUN_ID');
+    // const githubRunId = "Hello";
   
     // Check if GH run_id is defined
     if (!githubRunId) {
