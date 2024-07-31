@@ -1,9 +1,9 @@
 Cypress.Commands.add('logHeaders', (testName) => {
-    const githubToken = Cypress.env('GITHUB_TOKEN');
+    const githubRunId = Cypress.env('GITHUB_RUN_ID');
     // const githubToken = "Hello";
   
     const headers = {
-      'UNIQUE-IDENTIFER': `${githubToken} - ${testName}`,
+      'UNIQUE-IDENTIFIER': `${githubRunId} - ${testName}`,
     };
   
     // Log headers to the console and Cypress log
