@@ -5,13 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    env: {
-      GITHUB_TOKEN: process.env.GITHUB_TOKEN,
-    },
     fixturesFolder: false
   },
   retries: 3,
-  "env": {
-    "GITHUB_RUN_ID": "test-run-id"
-  }
 });
