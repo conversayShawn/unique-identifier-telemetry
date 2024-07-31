@@ -1,6 +1,5 @@
 Cypress.Commands.add('logHeaders', (testName) => {
     
-  console.log('All environment variables:', Cypress.env());
   const githubToken = Cypress.env('GITHUB_TOKEN');;
     // const githubToken = "Hello";
   
