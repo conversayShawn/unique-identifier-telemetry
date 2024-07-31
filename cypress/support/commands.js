@@ -1,6 +1,6 @@
 Cypress.Commands.add('logHeaders', (testName) => {
     
-  console.log('All environment variables:', Cypress.env());
+  // console.log('All environment variables:', Cypress.env());
   const githubRunId = Cypress.env('GH_RUN_ID');;
     // const githubRunId = "Hello";
   
