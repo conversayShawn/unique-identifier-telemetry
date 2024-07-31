@@ -10,5 +10,8 @@ module.exports = defineConfig({
     },
     fixturesFolder: false
   },
-  retries: 3
+  retries: 3,
+  "env": {
+    "GITHUB_RUN_ID": "test-run-id"
+  }
 });

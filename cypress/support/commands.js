@@ -1,11 +1,13 @@
 Cypress.Commands.add('logHeaders', (testName) => {
     
   console.log('All environment variables:', Cypress.env());
-  const githubRunId = Cypress.env('GITHUB_RUN_ID');
+  // const githubRunId = Cypress.env('GITHUB_RUN_ID');;
+  const githubRunId = Cypress.env('GITHUB_RUN_ID') || 'default-value';;
     // const githubRunId = "Hello";
   
     // Check if GH run_id is defined
-    if (!githubRunId) {
+    // if (!githubRunId) {
+    if (!githubRunId  === 'default-value') {
       console.error('GITHUB_RUN_ID is undefined');
     } else {
       const headers = {
